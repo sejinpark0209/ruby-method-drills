@@ -6,6 +6,8 @@
   # returns an array containing every integer from 0 to n
   # counts up or down
   # rounds off decimals
+def count_to number
+  0..number.round
 
 #is_integer?
   # takes in a number

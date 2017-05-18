@@ -6,6 +6,19 @@
   # counts how many times each character appears in a string
   # ignores case
   # returns the hash
+def character_count word
+  arr_word = word.split('')
+  result = Hash.new
+  arr_word.each do |i|
+    char = arr_word[i]
+    if result[char] 
+      result[char] += 1
+    else
+      result[char] = 1
+    end
+  end
+  result
+end
 
 ## STRETCH ##
 #word_count
